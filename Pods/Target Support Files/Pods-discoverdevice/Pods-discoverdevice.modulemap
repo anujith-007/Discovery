@@ -1,0 +1,6 @@
+framework module Pods_discoverdevice {
+  umbrella header "Pods-discoverdevice-umbrella.h"
+
+  export *
+  module * { export * }
+}
