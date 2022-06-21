@@ -37,7 +37,7 @@ class HomeViewController: UIViewController,NetServiceBrowserDelegate, NetService
         self.bonjourBrowser.searchForServices(ofType: "_airplay._tcp", inDomain: "local.")
     }
     
-    // NetService Delegate and NetServiceBrowserDelegate
+    // NetService Delegate and NetServiceBrowserDelegate    -----------------------------------------------------------------------
     
     func netServiceBrowserWillSearch(_ browser: NetServiceBrowser) {
         print("starting search..")
@@ -122,7 +122,8 @@ class HomeViewController: UIViewController,NetServiceBrowserDelegate, NetService
         }
     }
     
-    // TableView Delegate and Data source
+    // TableView Delegate and Data source     --------------------------------------------------------------------
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return discoveredArray.count
     }
